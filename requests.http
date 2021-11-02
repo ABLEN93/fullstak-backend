@@ -1,0 +1,30 @@
+### Register new user
+POST http://localhost:9000/register
+Content-Type: application/json
+
+{
+    "email": "abdulkjdf@gmail.com",
+    "password": "123456"
+}
+
+### Login user
+POST http://localhost:9000/login
+Content-Type: application/json
+
+{
+    "email": "joel.peltonen@example.org",
+    "password": "123456"
+}
+
+### Send a message
+POST http://localhost:9000/message
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTZmZTc2NzM2ZDFjNGQ2NWI0M2ZhMzgiLCJpYXQiOjE2MzQ3MzE1MDR9.iwEhYHlvLN4Tr_ptzGrRfeF5Kxo13CgY33rhPN_xVNs
+Content-Type: application/json
+
+{
+    "message": "MyNameIsJoel"
+}
+
+###
+
+GET http://localhost:9000/
